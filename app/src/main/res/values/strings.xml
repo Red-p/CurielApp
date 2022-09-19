@@ -1,0 +1,12 @@
+<resources>
+    <string name="app_name">CurielAppv2</string>
+    <string name="title_home">Home</string>
+    <string name="title_storico">Storico</string>
+    <string name="title_lista">Lista</string>
+    <string name="TagElena">E</string>
+    <string name="TagMichele">M</string>
+    <string name="textButtonAddSpesa">Aggiungi Spesa</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+</resources>

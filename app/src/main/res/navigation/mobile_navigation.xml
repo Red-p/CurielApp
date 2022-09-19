@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/navigation_home">
+
+    <fragment
+        android:id="@+id/navigation_home"
+        android:name="androidx.cap.app.curielappv2.ui.home.HomeFragment"
+        android:label="@string/title_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_navigation_home_to_addSpesaFragment"
+            app:destination="@id/addSpesaFragment" />
+    </fragment>
+
+    <fragment
+        android:id="@+id/navigation_storico"
+        android:name="androidx.cap.app.curielappv2.ui.storico.StoricoFragment"
+        android:label="@string/title_storico"
+        tools:layout="@layout/fragment_storico" />
+
+    <fragment
+        android:id="@+id/navigation_lista"
+        android:name="androidx.cap.app.curielappv2.ui.lista.ListaFragment"
+        android:label="@string/title_lista"
+        tools:layout="@layout/fragment_lista" >
+        <action
+            android:id="@+id/action_navigation_lista_to_addArticoloFragment"
+            app:destination="@id/addArticoloFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addSpesaFragment"
+        android:name="androidx.cap.app.curielappv2.ui.home.AddSpesaFragment"
+        android:label="add_spesa_fragment"
+        tools:layout="@layout/add_spesa_fragment" >
+        <action
+            android:id="@+id/action_addSpesaFragment_to_navigation_home"
+            app:destination="@id/navigation_home" />
+    </fragment>
+    <fragment
+        android:id="@+id/addArticoloFragment"
+        android:name="androidx.cap.app.curielappv2.ui.lista.AddArticoloFragment"
+        android:label="add_articolo_fragment"
+        tools:layout="@layout/add_articolo_fragment" >
+        <action
+            android:id="@+id/action_addArticoloFragment_to_navigation_lista"
+            app:destination="@id/navigation_lista" />
+    </fragment>
+</navigation>
